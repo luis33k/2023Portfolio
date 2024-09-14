@@ -1,0 +1,297 @@
+body {
+    font-family: 'Coda', cursive;
+    font-size: 15px;
+    line-height: 1.5;
+    padding: 0;
+    margin: 0;
+    background-size: cover;
+	background-color: white; /* Fallback background color */
+	overflow-x: hidden; /* Hide horizontal overflow */
+	opacity: 0;
+	transition: opacity .5s;
+}
+
+.container {
+    width: 80%;
+    margin: auto;
+    overflow: hidden;
+}
+
+.container h1{
+	font-size: 34px;
+	display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+	color: #43485c;
+}	
+
+ul{
+    margin: 0;
+    padding: 0;
+}
+
+header{
+    background: #484848;
+    color: white;
+    padding-top: 10px;
+    min-height: 70px;
+    border-bottom: grey 3px solid;
+ 
+}
+
+header a, header span{
+    color: white;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 16px;
+}
+
+header li{
+    float: left;
+    display: inline;
+    padding-left: 20px;
+    padding-right: 20px;
+    margin-top: 10px;
+}
+
+header #logoArea{
+    float: left;
+}
+
+header #logoArea h1{
+    margin: 0;
+    margin-top: 10px;
+}
+
+
+header nav{
+    float: right;
+    margin-top: 10px;
+}
+
+header a:hover, header span:hover{
+    color: grey;
+    font-weight: bold;
+}
+
+header nav ul li.current a, header nav ul li.current span {
+    font-weight: bold; /* Bold text for current page */
+	color: grey;
+    text-decoration: none; /* if you want Underline for current page */
+}
+
+/* Style for the content sections 
+section {
+    padding: 0px;
+    margin: 20px;
+    background-color: #fff;
+    border: 1px solid #ddd;
+	display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+*/
+#showcase{
+	display: flex;
+    min-height: 650px;
+    background-repeat: no-repeat;
+    background-position: right;
+    text-align: center;
+    color: white;
+}
+
+#showcase .container.center-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%; /* To make the container take up the full height of the section */
+}
+
+#showcase h1{
+    margin-top: 0px; /* 60px*/
+    font-size: 80px;
+    margin-bottom: 0px; /* 24px*/
+    color: #f4f4f4;
+}
+
+#showcase p{
+    font-size: 20px; 
+}
+
+#showcase .button_1 {
+    height: 60px;
+	width: 240px; /* Set a fixed width to create a round shape */
+	font-size: 22px; /* Increase the font size */
+    color: white;
+	line-height: 60px; /* Vertically center text within the button */
+	border: 1px solid #484848; /* Add a border with a color */
+	border-radius: 10px; /* %5 Make the button round */
+	padding: 0; /* Remove padding to make it fully round */
+    text-align: center;
+    display: block;
+	cursor: pointer;
+	background-color: #484848;
+    margin: 20px auto; /* Center the button horizontally and add margin for spacing */
+    text-decoration: none; /* Remove underline from text */
+    transition: background-color 0.5s, color 0.5s; /* Add a transition for background color and text color */
+}
+
+#showcase .button_1:hover {
+    background-color: #E0E0E0; /* Change background color on hover */
+    color: #35424a; /* Change text color on hover */
+    text-decoration: none; /* Remove underline from text */
+}
+
+#newsletter{
+    padding: 10px;
+    color: black;
+    background-color: white;
+	align-items: center;
+
+}
+
+#newsletter h1{
+	align-items: center;
+    text-align: center;
+}
+
+#boxes{
+    margin-top: 20px;
+	align-items: center;
+    text-align: center;
+	padding: 0px;
+    margin: 20px;
+    background-color: #fff;
+    border: 1px solid #ddd;
+	display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+#boxes .box{
+    float: left;
+    width: 33%;
+    padding: 0px;
+    text-align: center;
+	align-items: center;
+}
+
+#boxes .box img{
+	align-items: center;
+    text-align: center;
+    width: 90px;
+}
+
+/* Style links within sections */
+section a {
+    color: #0077B6;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s; /* Smooth color transition */
+}
+
+/* Change color on hover */
+section a:hover {
+    color: #333;
+}
+
+/* Remove bullet points under the Projects section */
+section ul {
+    list-style: none; /* Remove bullet points */
+}
+
+.line {
+    width: 100%;
+    height: 2px;
+    background-color: #000;
+	opacity: 50%;
+}
+
+/* Add a media query for smaller screens (e.g., mobile devices) */
+@media (max-width: 768px) {
+    body {
+        font-size: 14px; /* Adjust font size for readability */
+    }
+
+    header ul {
+        display: none; /* Hide the navigation links on small screens */
+    }
+
+    header #logoArea {
+        text-align: center; /* Center the logo on small screens */
+    }
+
+    header #logoArea h1 {
+        margin-top: 0;
+    }
+
+    header nav {
+        text-align: center; /* Center the navigation on small screens */
+    }
+
+    header li {
+        display: block; /* Display navigation links as block elements on small screens */
+        padding: 10px; /* Increase padding for touch targets */
+    }
+
+    header a {
+        font-size: 16px;
+    }
+	
+    /* Adjust other styles as needed for smaller screens */
+}
+
+/* Add a media query for even smaller screens (e.g., very narrow mobile devices) */
+@media (max-width: 480px) {
+    body {
+        font-size: 13px; /* Further reduce font size for very small screens */
+    }
+
+    header ul {
+        display: none; /* Hide the navigation links on small screens */
+    }
+
+    header #logoArea {
+        text-align: center; /* Center the logo on small screens */
+    }
+
+    header #logoArea h1 {
+        margin-top: 0;
+    }
+
+    header nav {
+        text-align: center; /* Center the navigation on small screens */
+    }
+
+    header li {
+        display: block; /* Display navigation links as block elements on small screens */
+        padding: 10px; /* Increase padding for touch targets */
+    }
+
+    header a {
+        font-size: 16px;
+    }
+	
+    #timeline {
+        flex-direction: column;
+    }
+	
+    /* Adjust other styles as needed for very small screens */
+}
+
+footer {
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    padding: 20px;
+    background-color: #484848;
+    color: white;
+    text-align: center;
+	border-top: grey 3px solid;
+}

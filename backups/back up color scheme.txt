@@ -1,0 +1,102 @@
+body
+font-family: 'Coda', cursive;
+background-color: white; /* Fallback background color */
+
+#education
+background-color: white;
+
+header
+background: #35424a;
+color: white;
+
+header a, header span
+color: white;
+
+.container h1
+color: #43485c;
+
+header a:hover, header span:hover
+color: grey;
+
+header nav ul li.current a, header nav ul li.current span 
+color: grey;
+
+#showcase
+color: white;
+
+#showcase h1
+color: #f4f4f4;
+
+#showcase .button_1
+color: white;
+background-color: #35424a;
+border: 0.0625em solid #484848; /* Add a border with a color 1px*/
+
+#showcase .button_1:hover
+background-color: #E0E0E0; /* Change background color on hover */
+color: #35424a; /* Change text color on hover */
+
+#newsletter
+color: black;
+background-color: white;
+
+#boxes 
+background-color: #fff;
+border: 0.0625em solid #ddd; /* 1px converted to em */
+
+section a  
+color: #0077B6;
+font-weight: bold;
+
+section a:hover
+color: #333;
+
+.XLline 
+background-color: #000;
+
+#smallline
+background-color: #000;
+
+#mediumline 
+background-color: #000;
+
+#largeline
+background-color: #000;
+
+.bar 
+background-color: #ccc;
+
+.bar-inner 
+height: 1.25em;
+background-color: #ff90fc;
+
+.percent-text
+color: #fff;
+
+.menu-icon 
+color: white; /* Set the color of the menu icon */
+
+.dropdown-content
+background-color: #35424a;
+border: 0.0625em solid grey;
+
+.dropdown-content span
+color: white;
+
+#non-cover
+background-color: #35424a;
+color: white;
+border-top: 0.1875em solid grey; /* 3px converted to em */
+
+#cover
+background-color: #35424a;
+color: white;
+border-top: 0.1875em solid grey; /* 3px converted to em */
+
+footer p
+color: white;
+
+footer
+background-color: #35424a;
+color: white;
+border-top: 0.1875em solid grey; /* 3px converted to em */

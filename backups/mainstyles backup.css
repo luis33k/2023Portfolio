@@ -1,0 +1,2992 @@
+body {
+    font-family: 'Coda', cursive;
+    font-size: 1em; /* 15px converted to em */
+    line-height: 1.5;
+    padding: 0;
+    margin: 0;
+	background-color: white; /* Fallback background color */
+	background-size: cover;
+	overflow-x: hidden; /* Hide horizontal overflow */
+	opacity: 0;
+	transition: opacity 1s;
+}
+
+#coverpage {
+	background: url('../assets/background2.png') no-repeat center fixed;
+	background-size: auto;
+	opacity: 0;
+	max-width: 100%;
+	transition: opacity 1s;
+}
+
+#education {
+	background-color: white;
+	max-width: 100%;
+	/*min-height: 58.2em;*/
+}
+
+.container {
+    width: 95%;
+    margin: auto;
+    overflow: hidden;
+}
+
+.container h1{
+    font-size: 2.125em; /* 34px converted to em */
+	display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+	color: #43485c;
+}	
+
+ul{
+    margin: 0;
+    padding: 0;
+}
+
+header{
+    background: #35424a; /*#35424a;*/
+    padding-top: 1.25em; /* 20px converted to em */
+    min-height: 4.375em; /* 70px converted to em */
+    border-bottom: 0.1875em solid grey; /* 3px converted to em */
+    top: 0;
+	margin-top: auto;
+    color: white;
+    text-align: center;
+}
+
+header a, header span{
+    color: white;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 1em; /* 16px converted to em */
+}
+
+header li{
+    float: left;
+    display: inline;
+    padding-left: 1.25em; /* 20px converted to em */
+    padding-right: 1.25em; /* 20px converted to em */
+    margin-top: 0.625em; /* 10px converted to em */
+}
+
+header #logoArea{
+    float: left;
+}
+
+header #logoArea h1{
+    margin: 0;
+    margin-top: 0.625em; /*10px*/
+}
+
+
+header nav{
+    float: right;
+    margin-top: 0em;
+	
+}
+
+header a:hover, header span:hover{
+    color: grey;
+    font-weight: bold;
+}
+
+header nav ul li.current a, header nav ul li.current span {
+    font-weight: bold; /* Bold text for current page */
+	color: grey;
+    text-decoration: none; /* if you want Underline for current page */
+}
+
+#showcase{
+	display: flex;
+    min-height: 46.7em; /* 650px converted to em */
+    background-repeat: no-repeat;
+    background-position: right;
+    text-align: center;
+    color: white;
+}
+
+#showcase .container.center-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%; /* To make the container take up the full height of the section */
+}
+
+#showcase h1{
+    margin-top: 0.8em; /* 60px*/
+    font-size: 5em; /* 80px converted to em */
+    margin-bottom: 0.2em; /* 24px converted to em */
+    color: #f4f4f4;
+}
+
+#showcase p{
+    font-size: 1.25em; /* 20px converted to em */
+
+}
+
+#showcase .button_1 {
+    height: 3em; /* 60px converted to em */
+	width: 10em; /* 240px converted to em Set a fixed width to create a round shape */
+	font-size: 1.375em; /* 22px converted to em  Increase the font size */
+    color: white;
+	line-height: 3em; /* 60px converted to em  Vertically center text within the button */
+	border: 0.0625em solid #484848; /* Add a border with a color 1px*/
+	border-radius: 5%; /* 5px converted to em  %5 Make the button round */
+	padding: 0; /* Remove padding to make it fully round */
+    text-align: center;
+    display: block;
+	cursor: pointer;
+	background-color: #35424a;
+    margin: 1.5em auto; /* 20px converted to em */ /* Center the button horizontally and add margin for spacing */
+    text-decoration: none; /* Remove underline from text */
+    transition: background-color 0.5s, color 0.5s; /* Add a transition for background color and text color */
+}
+
+#showcase .button_1:hover {
+    background-color: #E0E0E0; /* Change background color on hover */
+    color: #35424a; /* Change text color on hover */
+    text-decoration: none; /* Remove underline from text */
+}
+
+#newsletter{
+    padding: 0.625em; /* 10px converted to em */
+    color: black;
+    background-color: white;
+	align-items: center;
+
+}
+
+#newsletter h1{
+    text-align: center;
+	align-items: center;
+}
+
+#boxes {
+    margin-top: 1.25em; /* 20px converted to em */
+	align-items: center;
+    text-align: center;
+	padding: 0;
+    margin: 1.25em;
+    background-color: #fff;
+    border: 0.0625em solid #ddd; /* 1px converted to em */
+	display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+#boxes-no-border{
+    margin-top: 1.25em; /* 20px converted to em */
+	align-items: center;
+    text-align: center;
+	padding: 0px;
+    margin: 0em;
+	/*min-height: 46.7em;*/
+	display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+#boxes-no-border .container h1{
+	margin-top: 1.25em; /* 20px converted to em */
+
+}
+
+#boxes-no-border .box{
+    float: left;
+    width: 44%;
+    padding: 1.5625em; /* 25px converted to em */
+    text-align: center;
+	align-items: center;
+}
+
+#boxes-no-border .box p {
+	align-items: left;
+	text-align: left;
+	padding: 1.25em; /* 20px converted to em */
+	text-indent: 1.875em; /* 30px converted to em */
+}
+
+#boxes-no-border .box img{
+	align-items: center;
+    text-align: center;
+    width: 3.75em; /* 60px converted to em */
+}
+
+#boxes-no-border .box2{
+    float: right;
+    width: 44%;
+    padding: 1.5625em; /* 25px converted to em */
+    text-align: center;
+	align-items: center;
+}
+
+#boxes-no-border .box2 p {
+	align-items: right;
+	text-align: right;
+	padding: 1.25em; /* 20px converted to em */
+	text-indent: 1.875em; /* 30px converted to em */
+}
+
+#boxes-no-border .box2 img{
+	align-items: center;
+    text-align: center;
+    width: 3.75em; /* 60px converted to em */
+}
+
+#boxes-no-border .box3{
+    float: left;
+    width: 33%;
+    padding: 0;
+    text-align: center;
+	align-items: center;
+}
+
+#boxes-no-border .box3 p {
+	align-items: left;
+	text-align: left;
+	padding: 1.25em; /* 20px converted to em */
+	text-indent: 0 em; /* 30px converted to em */
+
+}
+
+#boxes-no-border .box3 img{
+	align-items: center;
+    text-align: center;
+    width: 3.75em; /* 60px converted to em */
+}
+
+#boxes-no-border .box3 h3 {
+	font-size: 1.em;
+
+}
+
+#boxes-no-border .box3 h4 {
+	font-size: 0.9em;
+
+}
+
+#boxes .box{
+    float: left;
+    width: 33%;
+    padding: 0;
+    text-align: center;
+	align-items: center;
+}
+
+#boxes .box p {
+	align-items: left;
+	text-align: left;
+	padding: 1.25em; /* 20px converted to em */
+	text-indent: 1.875em; /* 30px converted to em */
+}
+
+#boxes .box img{
+	align-items: center;
+    text-align: center;
+    width: 3.75em; /* 60px converted to em */
+}
+
+/* Style links within sections */
+section a {
+    color: #0077B6;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s; /* Smooth color transition */
+}
+
+/* Change color on hover */
+section a:hover {
+    color: #333;
+}
+
+/* Remove bullet points under the Projects section */
+section ul {
+    list-style: none; /* Remove bullet points */
+}
+
+.XLline {
+    width: 100%;
+    height: 0.0625em;
+    background-color: #000;
+	opacity: 50%;
+}
+
+#smallline {
+	width: 50%;
+    height: 0.0625em;
+    background-color: #000;
+	margin: auto;
+	opacity: 50%;
+}
+
+#mediumline {
+	width: 80%;
+    height: 0.0625em;
+    background-color: #000;
+	margin: auto;
+	opacity: 50%;
+}
+
+#largeline {
+	width: 100%;
+    height: 0.0625em;
+    background-color: #000;
+	margin: auto;
+	opacity: 50%;
+}
+
+.percentage-bars {
+    display: flex;
+    flex-direction: column;
+}
+
+.bar {
+    background-color: #ccc; /* Set a background color for the outer bar */
+    margin-bottom: 0.625em; /* Add spacing between bars */
+	border-radius: 0.625em;
+    position: relative;
+}
+
+.bar-title {
+	font-weight: bold;
+	text-align: left;
+	margin-bottom: 0.83em;
+	position: relative;
+	top: 0;
+	left: 0;
+	z-index: 2; /* Bring the title to the front */
+
+}
+
+.bar-inner {
+    height: 1.25em;
+    background-color: #ff90fc; /* Set a different color for the inner percentage bar */
+	border-radius: 0.625em;
+	position: relative;
+	top: 0;
+	width: 0;
+}
+
+.percent-text {
+    font-family: 'Coda', cursive;
+    position: absolute;
+    top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	color: #fff; /* Text color */
+    z-index: 0; /* Bring the percentage text to the front */
+
+}
+
+/* CSS for the dropdown menu */
+.dropdown {
+	float: right;
+	margin-top: 0.625em;
+}
+
+.menu-icon {
+	font-size: 1.5em;
+	cursor: pointer;
+	color: white; /* Set the color of the menu icon */
+}
+
+.dropdown-content {
+	display: none;
+	position: absolute;
+	top: 2em;
+	right: 1em;
+	background-color: #35424a;
+	min-width: 10em;
+	z-index: 1;
+	border: 0.0625em solid grey;
+}
+
+.dropdown-content span {
+	display: block;
+	color: white;
+	padding: 1em;
+	text-decoration: none;
+	text-align: center;
+}
+
+/* Show the dropdown menu when it's open */
+.open {
+	display: block;
+}
+
+#non-cover {
+	margin-top: auto;
+	position: fixed;
+	bottom: 0;
+    width: 100%;
+    padding: 1.25em; /* 20px converted to em */
+    background-color: #35424a;
+    color: white;
+    text-align: center;
+	border-top: 0.1875em solid grey; /* 3px converted to em */
+
+}
+
+#cover {
+	position: fixed;
+    bottom: 0;
+    width: 100%;
+    padding: 1.25em; /* 20px converted to em */
+    background-color: #35424a;
+    color: white;
+    text-align: center;
+	border-top: 0.1875em solid grey; /* 3px converted to em */
+}
+
+footer p{
+    color: white;
+    text-align: center;
+	font-size: 0.8em;
+	margin-top: 1.25em;
+}
+
+
+footer {
+    bottom: 0;
+	margin-top: auto;
+    width: 100%;
+    padding: 1.25em; /* 20px converted to em */
+    background-color: #35424a;
+    color: white;
+    text-align: center;
+	border-top: 0.1875em solid grey; /* 3px converted to em */
+}
+
+/* A media query for mobile screens (e.g., mobile devices) */
+@media (max-width: 1280px) {
+	
+	header{
+		width: 83em
+	}
+	
+	.container {
+		width: 75%;
+		margin: auto;
+		overflow: hidden;
+	}
+	
+	body {
+		font-family: 'Coda', cursive;
+		font-size: 1em; /* 15px converted to em */
+		line-height: 1.5;
+		padding: 0;
+		margin: 0;
+		background-size: cover;
+		background-color: white; /* Fallback background color */
+		overflow-x: hidden; /* Hide horizontal overflow */
+		opacity: 0;
+		transition: opacity 1s;
+	}
+
+	#coverpage {
+		background: url('../assets/background2.png') no-repeat center center fixed;
+		background-size: auto;
+		opacity: 0;
+		max-width: 100%;
+		/*min-height: 51.9em;*/
+		transition: opacity 1s;
+	}
+
+	#education {
+		background-color: white;
+		max-width: 100%;
+		min-height: 58.2em;
+	}
+	
+	#skills {
+		background-color: white;
+		max-width: 100%;
+		min-width: 80.5em;
+	}
+
+	.container h1{
+		font-size: 2.125em; /* 34px converted to em */
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		color: #43485c;
+	}	
+
+	#showcase{
+		display: flex;
+		min-height: 40.5em; /* 650px converted to em */
+		/*width: 83em;*/
+		background-repeat: no-repeat;
+		background-position: right;
+		text-align: center;
+		color: white;
+	}
+
+	#showcase .container.center-content {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		height: 100%; /* To make the container take up the full height of the section */
+	}
+
+	#showcase h1{
+		margin-top: 0.8em; /* 60px*/
+		font-size: 5em; /* 80px converted to em */
+		margin-bottom: 0.2em; /* 24px converted to em */
+		color: #f4f4f4;
+	}
+
+	#showcase p{
+		font-size: 1.25em; /* 20px converted to em */
+
+	}
+
+	#showcase .button_1 {
+		height: 3em; /* 60px converted to em */
+		width: 10em; /* 240px converted to em Set a fixed width to create a round shape */
+		font-size: 1.375em; /* 22px converted to em  Increase the font size */
+		color: white;
+		line-height: 3em; /* 60px converted to em  Vertically center text within the button */
+		border: 0.0625em solid #484848; /* Add a border with a color 1px*/
+		border-radius: 5%; /* 5px converted to em  %5 Make the button round */
+		padding: 0; /* Remove padding to make it fully round */
+		text-align: center;
+		display: block;
+		cursor: pointer;
+		background-color: #35424a;
+		margin: 1.5em auto; /* 20px converted to em */ /* Center the button horizontally and add margin for spacing */
+		text-decoration: none; /* Remove underline from text */
+		transition: background-color 0.5s, color 0.5s; /* Add a transition for background color and text color */
+	}
+
+	#showcase .button_1:hover {
+		background-color: #E0E0E0; /* Change background color on hover */
+		color: #35424a; /* Change text color on hover */
+		text-decoration: none; /* Remove underline from text */
+	}
+
+	#newsletter{
+		padding: 0.625em; /* 10px converted to em */
+		color: black;
+		background-color: white;
+		align-items: center;
+
+	}
+
+	#newsletter h1{
+		text-align: center;
+		align-items: center;
+	}
+
+	#boxes {
+		margin-top: 1.25em; /* 20px converted to em */
+		align-items: center;
+		text-align: center;
+		padding: 0;
+		margin: 1.25em;
+		background-color: #fff;
+		border: 0.0625em solid #ddd; /* 1px converted to em */
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		text-align: center;
+	}
+
+	#boxes-no-border{
+		margin-top: 1.25em; /* 20px converted to em */
+		align-items: center;
+		text-align: center;
+		padding: 0px;
+		min-width: 80em;
+		margin: 1.25em;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		text-align: center;
+	}
+
+	#boxes-no-border .container h1{
+		margin-top: 1.25em; /* 20px converted to em */
+
+	}
+
+	#boxes-no-border .box{
+		float: none;
+		width: 94.8%;
+		padding: 1.5625em; /* 25px converted to em */
+		text-align: center;
+		align-items: center;
+	}
+
+	#boxes-no-border .box p {
+		align-items: center;
+		text-align: center;
+		padding: 1.25em; /* 20px converted to em */
+		text-indent: 1.875em; /* 30px converted to em */
+	}
+
+	#boxes-no-border .box img{
+		align-items: center;
+		text-align: center;
+		width: 3.75em; /* 60px converted to em */
+	}
+
+	#boxes-no-border .box2{
+		float: none;
+		width: 94.8%;
+		padding: 1.5625em; /* 25px converted to em */
+		text-align: center;
+		align-items: center;
+	}
+
+	#boxes-no-border .box2 p {
+		align-items: center;
+		text-align: center;
+		padding: 1.25em; /* 20px converted to em */
+		text-indent: 1.875em; /* 30px converted to em */
+	}
+
+	#boxes-no-border .box2 img{
+		align-items: center;
+		text-align: center;
+		width: 3.75em; /* 60px converted to em */
+	}
+
+	#boxes-no-border .box3{
+		float: none;
+		width: 100%;
+		padding: 0;
+		text-align: center;
+		align-items: center;
+	}
+
+	#boxes-no-border .box3 p {
+		align-items: center;
+		text-align: left;
+		padding: 0.2em; /* 20px converted to em */
+		text-indent: 0 em; /* 30px converted to em */
+
+	}
+
+	#boxes-no-border .box3 img{
+		align-items: center;
+		text-align: center;
+		width: 3.75em; /* 60px converted to em */
+	}
+
+	#boxes-no-border .box3 h3 {
+		font-size: 1.em;
+
+	}
+
+	#boxes-no-border .box3 h4 {
+		font-size: 0.9em;
+
+	}
+
+	#boxes .box{
+		float: none;
+		width: 100%;
+		padding: 0;
+		text-align: center;
+		align-items: center;
+	}
+
+	#boxes .box p {
+		align-items: center;
+		text-align: center;
+		padding: 1.25em; /* 20px converted to em */
+		text-indent: 1.875em; /* 30px converted to em */
+	}
+
+	#boxes .box img{
+		align-items: center;
+		text-align: center;
+		width: 3.75em; /* 60px converted to em */
+	}
+
+	/* Style links within sections */
+	section a {
+		color: #0077B6;
+		text-decoration: none;
+		font-weight: bold;
+		transition: color 0.3s; /* Smooth color transition */
+	}
+
+	/* Change color on hover */
+	section a:hover {
+		color: #333;
+	}
+
+	/* Remove bullet points under the Projects section */
+	section ul {
+		list-style: none; /* Remove bullet points */
+	}
+
+	.XLline {
+		width: 100%;
+		height: 0.0625em;
+		background-color: #000;
+		opacity: 50%;
+	}
+
+	#smallline {
+		width: 50%;
+		height: 0.0625em;
+		background-color: #000;
+		margin: auto;
+		opacity: 50%;
+	}
+
+	#mediumline {
+		width: 80%;
+		height: 0.0625em;
+		background-color: #000;
+		margin: auto;
+		opacity: 50%;
+	}
+
+	#largeline {
+		width: 100%;
+		height: 0.0625em;
+		background-color: #000;
+		margin: auto;
+		opacity: 50%;
+	}
+
+	.percentage-bars {
+		display: flex;
+		flex-direction: column;
+	}
+
+	.bar {
+		background-color: #ccc; /* Set a background color for the outer bar */
+		margin-bottom: 0.625em; /* Add spacing between bars */
+		border-radius: 0.625em;
+		position: relative;
+	}
+
+	.bar-title {
+		font-weight: bold;
+		text-align: left;
+		margin-bottom: 0.83em;
+		position: relative;
+		top: 0;
+		left: 0;
+		z-index: 2; /* Bring the title to the front */
+
+	}
+
+	.bar-inner {
+		height: 1.25em;
+		background-color: #ff90fc; /* Set a different color for the inner percentage bar */
+		border-radius: 0.625em;
+		position: relative;
+		top: 0;
+		width: 0;
+	}
+
+	.percent-text {
+		font-family: 'Coda', cursive;
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		transform: translate(-50%, -50%);
+		color: #fff; /* Text color */
+		z-index: 0; /* Bring the percentage text to the front */
+
+	}
+
+	/* CSS for the dropdown menu */
+	.dropdown {
+		float: right;
+		margin-top: 0.625em;
+	}
+
+	.menu-icon {
+		font-size: 1.5em;
+		cursor: pointer;
+		color: white; /* Set the color of the menu icon */
+	}
+
+	.dropdown-content {
+		display: none;
+		position: absolute;
+		top: 2em;
+		right: 1em;
+		background-color: #35424a;
+		min-width: 10em;
+		z-index: 1;
+		border: 0.0625em solid grey;
+	}
+
+	.dropdown-content span {
+		display: block;
+		color: white;
+		padding: 1em;
+		text-decoration: none;
+		text-align: center;
+	}
+
+	/* Show the dropdown menu when it's open */
+	.open {
+		display: block;
+	}
+	
+	#non-cover {
+		margin-top: auto;
+		position: relative;
+		bottom: 0;
+		padding: 1.25em; /* 20px converted to em */
+		background-color: #35424a;
+		color: white;
+		text-align: center;
+		border-top: 0.1875em solid grey; /* 3px converted to em */
+
+	}
+
+	#cover {
+		position: fixed;
+		bottom: 0;
+		padding: 1.25em; /* 20px converted to em */
+		background-color: #35424a;
+		color: white;
+		text-align: center;
+		border-top: 0.1875em solid grey; /* 3px converted to em */
+	}
+
+	footer p{
+		color: white;
+		text-align: center;
+		font-size: 0.8em;
+		margin-top: 1.25em;
+	}
+
+
+	footer {
+		bottom: 0;
+		margin-top: auto;
+		padding: 1.25em; /* 20px converted to em */
+		background-color: #35424a;
+		color: white;
+		text-align: center;
+		border-top: 0.1875em solid grey; /* 3px converted to em */
+	}
+	
+	/* Adjust other styles as needed for smaller screens */
+
+}
+
+/* A media query for small mobile screens (e.g., mobile devices) */
+@media (max-width: 1024px) {
+	
+	header{
+		width: 66.5em;
+	}
+	
+	.container {
+		width: 70%;
+		margin: auto;
+		overflow: hidden;
+	}
+	
+}
+
+/* A media query for small mobile screens (e.g., mobile devices) */
+@media (max-width: 912px) {
+	
+	header{
+		width: 59.5em;
+	}
+	
+	.container {
+		width: 75%;
+		margin: auto;
+		overflow: hidden;
+	}
+	
+	body {
+		font-family: 'Coda', cursive;
+		font-size: 1em; /* 15px converted to em */
+		line-height: 1.5;
+		padding: 0;
+		margin: 0;
+		background-size: cover;
+		background-color: white; /* Fallback background color */
+		overflow-x: hidden; /* Hide horizontal overflow */
+		opacity: 0;
+		transition: opacity 1s;
+	}
+
+	#coverpage {
+		background: url('../assets/background2.png') no-repeat center center fixed;
+		background-size: cover;
+		opacity: 0;
+		max-width: 100%;
+		transition: opacity 1s;
+	}
+
+	#education {
+		background-color: white;
+	}
+
+	.container h1{
+		font-size: 2.125em; /* 34px converted to em */
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		color: #43485c;
+	}	
+
+	#showcase{
+		display: flex;
+		min-height: 74em; /* 650px converted to em */
+		background-repeat: no-repeat;
+		background-position: right;
+		text-align: center;
+		color: white;
+	}
+
+	#showcase .container.center-content {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		height: 100%; /* To make the container take up the full height of the section */
+	}
+
+	#showcase h1{
+		margin-top: 0.8em; /* 60px*/
+		font-size: 5em; /* 80px converted to em */
+		margin-bottom: 0.2em; /* 24px converted to em */
+		color: #f4f4f4;
+	}
+
+	#showcase p{
+		font-size: 1.25em; /* 20px converted to em */
+
+	}
+
+	#showcase .button_1 {
+		height: 3em; /* 60px converted to em */
+		width: 10em; /* 240px converted to em Set a fixed width to create a round shape */
+		font-size: 1.375em; /* 22px converted to em  Increase the font size */
+		color: white;
+		line-height: 3em; /* 60px converted to em  Vertically center text within the button */
+		border: 0.0625em solid #484848; /* Add a border with a color 1px*/
+		border-radius: 5%; /* 5px converted to em  %5 Make the button round */
+		padding: 0; /* Remove padding to make it fully round */
+		text-align: center;
+		display: block;
+		cursor: pointer;
+		background-color: #35424a;
+		margin: 1.5em auto; /* 20px converted to em */ /* Center the button horizontally and add margin for spacing */
+		text-decoration: none; /* Remove underline from text */
+		transition: background-color 0.5s, color 0.5s; /* Add a transition for background color and text color */
+	}
+
+	#showcase .button_1:hover {
+		background-color: #E0E0E0; /* Change background color on hover */
+		color: #35424a; /* Change text color on hover */
+		text-decoration: none; /* Remove underline from text */
+	}
+
+	#newsletter{
+		padding: 0.625em; /* 10px converted to em */
+		color: black;
+		background-color: white;
+		align-items: center;
+
+	}
+
+	#newsletter h1{
+		text-align: center;
+		align-items: center;
+	}
+
+	#boxes {
+		margin-top: 1.25em; /* 20px converted to em */
+		align-items: center;
+		text-align: center;
+		padding: 0;
+		margin: 1.25em;
+		background-color: #fff;
+		border: 0.0625em solid #ddd; /* 1px converted to em */
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		text-align: center;
+	}
+
+	#boxes-no-border{
+		margin-top: 1.25em; /* 20px converted to em */
+		align-items: center;
+		text-align: center;
+		padding: 0px;
+		margin: 1.25em;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		text-align: center;
+	}
+
+	#boxes-no-border .container h1{
+		margin-top: 1.25em; /* 20px converted to em */
+
+	}
+
+	#boxes-no-border .box{
+		float: none;
+		width: 100%;
+		padding: 1.5625em; /* 25px converted to em */
+		text-align: center;
+		align-items: center;
+	}
+
+	#boxes-no-border .box p {
+		align-items: center;
+		text-align: center;
+		padding: 1.25em; /* 20px converted to em */
+		text-indent: 1.875em; /* 30px converted to em */
+	}
+
+	#boxes-no-border .box img{
+		align-items: center;
+		text-align: center;
+		width: 3.75em; /* 60px converted to em */
+	}
+
+	#boxes-no-border .box2{
+		float: none;
+		width: 100%;
+		padding: 1.5625em; /* 25px converted to em */
+		text-align: center;
+		align-items: center;
+	}
+
+	#boxes-no-border .box2 p {
+		align-items: center;
+		text-align: center;
+		padding: 1.25em; /* 20px converted to em */
+		text-indent: 1.875em; /* 30px converted to em */
+	}
+
+	#boxes-no-border .box2 img{
+		align-items: center;
+		text-align: center;
+		width: 3.75em; /* 60px converted to em */
+	}
+
+	#boxes-no-border .box3{
+		float: none;
+		width: 100%;
+		padding: 0;
+		text-align: center;
+		align-items: center;
+	}
+
+	#boxes-no-border .box3 p {
+		align-items: center;
+		text-align: left;
+		padding: 0.2em; /* 20px converted to em */
+		text-indent: 0 em; /* 30px converted to em */
+
+	}
+
+	#boxes-no-border .box3 img{
+		align-items: center;
+		text-align: center;
+		width: 3.75em; /* 60px converted to em */
+	}
+
+	#boxes-no-border .box3 h3 {
+		font-size: 1.em;
+
+	}
+
+	#boxes-no-border .box3 h4 {
+		font-size: 0.9em;
+
+	}
+
+	#boxes .box{
+		float: none;
+		width: 100%;
+		padding: 0;
+		text-align: center;
+		align-items: center;
+	}
+
+	#boxes .box p {
+		align-items: center;
+		text-align: center;
+		padding: 1.25em; /* 20px converted to em */
+		text-indent: 1.875em; /* 30px converted to em */
+	}
+
+	#boxes .box img{
+		align-items: center;
+		text-align: center;
+		width: 3.75em; /* 60px converted to em */
+	}
+
+	/* Style links within sections */
+	section a {
+		color: #0077B6;
+		text-decoration: none;
+		font-weight: bold;
+		transition: color 0.3s; /* Smooth color transition */
+	}
+
+	/* Change color on hover */
+	section a:hover {
+		color: #333;
+	}
+
+	/* Remove bullet points under the Projects section */
+	section ul {
+		list-style: none; /* Remove bullet points */
+	}
+
+	.XLline {
+		width: 100%;
+		height: 0.0625em;
+		background-color: #000;
+		opacity: 50%;
+	}
+
+	#smallline {
+		width: 50%;
+		height: 0.0625em;
+		background-color: #000;
+		margin: auto;
+		opacity: 50%;
+	}
+
+	#mediumline {
+		width: 80%;
+		height: 0.0625em;
+		background-color: #000;
+		margin: auto;
+		opacity: 50%;
+	}
+
+	#largeline {
+		width: 100%;
+		height: 0.0625em;
+		background-color: #000;
+		margin: auto;
+		opacity: 50%;
+	}
+
+	.percentage-bars {
+		display: flex;
+		flex-direction: column;
+	}
+
+	.bar {
+		background-color: #ccc; /* Set a background color for the outer bar */
+		margin-bottom: 0.625em; /* Add spacing between bars */
+		border-radius: 0.625em;
+		position: relative;
+	}
+
+	.bar-title {
+		font-weight: bold;
+		text-align: left;
+		margin-bottom: 0.83em;
+		position: relative;
+		top: 0;
+		left: 0;
+		z-index: 2; /* Bring the title to the front */
+
+	}
+
+	.bar-inner {
+		height: 1.25em;
+		background-color: #ff90fc; /* Set a different color for the inner percentage bar */
+		border-radius: 0.625em;
+		position: relative;
+		top: 0;
+		width: 0;
+	}
+
+	.percent-text {
+		font-family: 'Coda', cursive;
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		transform: translate(-50%, -50%);
+		color: #fff; /* Text color */
+		z-index: 0; /* Bring the percentage text to the front */
+
+	}
+
+	/* CSS for the dropdown menu */
+	.dropdown {
+		float: right;
+		margin-top: 0.625em;
+	}
+
+	.menu-icon {
+		font-size: 1.5em;
+		cursor: pointer;
+		color: white; /* Set the color of the menu icon */
+	}
+
+	.dropdown-content {
+		display: none;
+		position: absolute;
+		top: 2em;
+		right: 1em;
+		background-color: #35424a;
+		min-width: 10em;
+		z-index: 1;
+		border: 0.0625em solid grey;
+	}
+
+	.dropdown-content span {
+		display: block;
+		color: white;
+		padding: 1em;
+		text-decoration: none;
+		text-align: center;
+	}
+
+	/* Show the dropdown menu when it's open */
+	.open {
+		display: block;
+	}
+
+	#non-cover {
+		margin-top: auto;
+		position: bottom;
+		bottom: 0;
+		width: 100%;
+		padding: 1.25em; /* 20px converted to em */
+		background-color: #35424a;
+		color: white;
+		text-align: center;
+		border-top: 0.1875em solid grey; /* 3px converted to em */
+
+	}
+
+	#cover {
+		position: fixed;
+		bottom: 0;
+		width: 100%;
+		padding: 1.25em; /* 20px converted to em */
+		background-color: #35424a;
+		color: white;
+		text-align: center;
+		border-top: 0.1875em solid grey; /* 3px converted to em */
+	}
+
+	footer p{
+		color: white;
+		text-align: center;
+		font-size: 0.8em;
+		margin-top: 1.25em;
+	}
+
+	footer {
+		bottom: 0;
+		margin-top: auto;
+		width: 100%;
+		padding: 1.25em; /* 20px converted to em */
+		background-color: #35424a;
+		color: white;
+		text-align: center;
+		border-top: 0.1875em solid grey; /* 3px converted to em */
+	}
+	
+	/* Adjust other styles as needed for smaller screens */
+
+}
+
+/* A media query for smaller screens (e.g., mobile devices) */
+@media (max-width: 768px) {
+	body {
+		font-family: 'Coda', cursive;
+		font-size: 1em; /* 15px converted to em */
+		line-height: 1.5;
+		padding: 0;
+		margin: 0;
+		background-size: cover;
+		background-color: white; /* Fallback background color */
+		overflow-x: hidden; /* Hide horizontal overflow */
+		opacity: 0;
+		transition: opacity 1s;
+	}
+
+	#coverpage {
+		background: url('../assets/background2.png') no-repeat center center fixed;
+		background-size: cover;
+		opacity: 0;
+		max-width: 100%;
+		transition: opacity 1s;
+	}
+
+	#education {
+		background-color: white;
+	}
+
+	.container {
+		width: 75%;
+		margin: auto;
+		overflow: hidden;
+	}
+
+	.container h1{
+		font-size: 2.125em; /* 34px converted to em */
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		color: #43485c;
+	}	
+
+	header{
+		width: 82.5em;
+	}
+
+	#showcase{
+		display: flex;
+		min-height: 40.625em; /* 650px converted to em */
+		background-repeat: no-repeat;
+		background-position: right;
+		text-align: center;
+		color: white;
+	}
+
+	#showcase .container.center-content {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		height: 100%; /* To make the container take up the full height of the section */
+	}
+
+	#showcase h1{
+		margin-top: 0.8em; /* 60px*/
+		font-size: 5em; /* 80px converted to em */
+		margin-bottom: 0.2em; /* 24px converted to em */
+		color: #f4f4f4;
+	}
+
+	#showcase p{
+		font-size: 1.25em; /* 20px converted to em */
+
+	}
+
+	#showcase .button_1 {
+		height: 3em; /* 60px converted to em */
+		width: 10em; /* 240px converted to em Set a fixed width to create a round shape */
+		font-size: 1.375em; /* 22px converted to em  Increase the font size */
+		color: white;
+		line-height: 3em; /* 60px converted to em  Vertically center text within the button */
+		border: 0.0625em solid #484848; /* Add a border with a color 1px*/
+		border-radius: 5%; /* 5px converted to em  %5 Make the button round */
+		padding: 0; /* Remove padding to make it fully round */
+		text-align: center;
+		display: block;
+		cursor: pointer;
+		background-color: #35424a;
+		margin: 1.5em auto; /* 20px converted to em */ /* Center the button horizontally and add margin for spacing */
+		text-decoration: none; /* Remove underline from text */
+		transition: background-color 0.5s, color 0.5s; /* Add a transition for background color and text color */
+	}
+
+	#showcase .button_1:hover {
+		background-color: #E0E0E0; /* Change background color on hover */
+		color: #35424a; /* Change text color on hover */
+		text-decoration: none; /* Remove underline from text */
+	}
+
+	#newsletter{
+		padding: 0.625em; /* 10px converted to em */
+		color: black;
+		background-color: white;
+		align-items: center;
+
+	}
+
+	#newsletter h1{
+		text-align: center;
+		align-items: center;
+	}
+
+	#boxes {
+		margin-top: 1.25em; /* 20px converted to em */
+		align-items: center;
+		text-align: center;
+		padding: 0;
+		margin: 1.25em;
+		background-color: #fff;
+		border: 0.0625em solid #ddd; /* 1px converted to em */
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		text-align: center;
+	}
+
+	#boxes-no-border{
+		margin-top: 1.25em; /* 20px converted to em */
+		align-items: center;
+		text-align: center;
+		padding: 0px;
+		margin: 1.25em;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		text-align: center;
+	}
+
+	#boxes-no-border .container h1{
+		margin-top: 1.25em; /* 20px converted to em */
+
+	}
+
+	#boxes-no-border .box{
+		float: none;
+		width: 100%;
+		padding: 1.5625em; /* 25px converted to em */
+		text-align: center;
+		align-items: center;
+	}
+
+	#boxes-no-border .box p {
+		align-items: center;
+		text-align: center;
+		padding: 1.25em; /* 20px converted to em */
+		text-indent: 1.875em; /* 30px converted to em */
+	}
+
+	#boxes-no-border .box img{
+		align-items: center;
+		text-align: center;
+		width: 3.75em; /* 60px converted to em */
+	}
+
+	#boxes-no-border .box2{
+		float: none;
+		width: 100%;
+		padding: 1.5625em; /* 25px converted to em */
+		text-align: center;
+		align-items: center;
+	}
+
+	#boxes-no-border .box2 p {
+		align-items: center;
+		text-align: center;
+		padding: 1.25em; /* 20px converted to em */
+		text-indent: 1.875em; /* 30px converted to em */
+	}
+
+	#boxes-no-border .box2 img{
+		align-items: center;
+		text-align: center;
+		width: 3.75em; /* 60px converted to em */
+	}
+
+	#boxes-no-border .box3{
+		float: none;
+		width: 100%;
+		padding: 0;
+		text-align: center;
+		align-items: center;
+	}
+
+	#boxes-no-border .box3 p {
+		align-items: center;
+		text-align: left;
+		padding: 0.2em; /* 20px converted to em */
+		text-indent: 0 em; /* 30px converted to em */
+
+	}
+
+	#boxes-no-border .box3 img{
+		align-items: center;
+		text-align: center;
+		width: 3.75em; /* 60px converted to em */
+	}
+
+	#boxes-no-border .box3 h3 {
+		font-size: 1.em;
+
+	}
+
+	#boxes-no-border .box3 h4 {
+		font-size: 0.9em;
+
+	}
+
+	#boxes .box{
+		float: none;
+		width: 100%;
+		padding: 0;
+		text-align: center;
+		align-items: center;
+	}
+
+	#boxes .box p {
+		align-items: center;
+		text-align: center;
+		padding: 1.25em; /* 20px converted to em */
+		text-indent: 1.875em; /* 30px converted to em */
+	}
+
+	#boxes .box img{
+		align-items: center;
+		text-align: center;
+		width: 3.75em; /* 60px converted to em */
+	}
+
+	/* Style links within sections */
+	section a {
+		color: #0077B6;
+		text-decoration: none;
+		font-weight: bold;
+		transition: color 0.3s; /* Smooth color transition */
+	}
+
+	/* Change color on hover */
+	section a:hover {
+		color: #333;
+	}
+
+	/* Remove bullet points under the Projects section */
+	section ul {
+		list-style: none; /* Remove bullet points */
+	}
+
+	.XLline {
+		width: 100%;
+		height: 0.0625em;
+		background-color: #000;
+		opacity: 50%;
+	}
+
+	#smallline {
+		width: 50%;
+		height: 0.0625em;
+		background-color: #000;
+		margin: auto;
+		opacity: 50%;
+	}
+
+	#mediumline {
+		width: 80%;
+		height: 0.0625em;
+		background-color: #000;
+		margin: auto;
+		opacity: 50%;
+	}
+
+	#largeline {
+		width: 100%;
+		height: 0.0625em;
+		background-color: #000;
+		margin: auto;
+		opacity: 50%;
+	}
+
+	.percentage-bars {
+		display: flex;
+		flex-direction: column;
+	}
+
+	.bar {
+		background-color: #ccc; /* Set a background color for the outer bar */
+		margin-bottom: 0.625em; /* Add spacing between bars */
+		border-radius: 0.625em;
+		position: relative;
+	}
+
+	.bar-title {
+		font-weight: bold;
+		text-align: left;
+		margin-bottom: 0.83em;
+		position: relative;
+		top: 0;
+		left: 0;
+		z-index: 2; /* Bring the title to the front */
+
+	}
+
+	.bar-inner {
+		height: 1.25em;
+		background-color: #ff90fc; /* Set a different color for the inner percentage bar */
+		border-radius: 0.625em;
+		position: relative;
+		top: 0;
+		width: 0;
+	}
+
+	.percent-text {
+		font-family: 'Coda', cursive;
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		transform: translate(-50%, -50%);
+		color: #fff; /* Text color */
+		z-index: 0; /* Bring the percentage text to the front */
+
+	}
+
+	/* CSS for the dropdown menu */
+	.dropdown {
+		float: right;
+		margin-top: 0.625em;
+	}
+
+	.menu-icon {
+		font-size: 1.5em;
+		cursor: pointer;
+		color: white; /* Set the color of the menu icon */
+	}
+
+	.dropdown-content {
+		display: none;
+		position: absolute;
+		top: 2em;
+		right: 1em;
+		background-color: #35424a;
+		min-width: 10em;
+		z-index: 1;
+		border: 0.0625em solid grey;
+	}
+
+	.dropdown-content span {
+		display: block;
+		color: white;
+		padding: 1em;
+		text-decoration: none;
+		text-align: center;
+	}
+
+	/* Show the dropdown menu when it's open */
+	.open {
+		display: block;
+	}
+
+	#non-cover {
+		margin-top: auto;
+		position: bottom;
+		bottom: 0;
+		width: 100%;
+		padding: 1.25em; /* 20px converted to em */
+		background-color: #35424a;
+		color: white;
+		text-align: center;
+		border-top: 0.1875em solid grey; /* 3px converted to em */
+
+	}
+
+	#cover {
+		position: fixed;
+		bottom: 0;
+		width: 100%;
+		padding: 1.25em; /* 20px converted to em */
+		background-color: #35424a;
+		color: white;
+		text-align: center;
+		border-top: 0.1875em solid grey; /* 3px converted to em */
+	}
+
+	footer p{
+		color: white;
+		text-align: center;
+		font-size: 0.8em;
+		margin-top: 1.25em;
+	}
+
+	footer {
+		bottom: 0;
+		margin-top: auto;
+		width: 100%;
+		padding: 1.25em; /* 20px converted to em */
+		background-color: #35424a;
+		color: white;
+		text-align: center;
+		border-top: 0.1875em solid grey; /* 3px converted to em */
+	}
+	
+    /* Adjust other styles as needed for smaller screens */
+}
+
+/* A media query for small mobile screens (e.g., mobile devices) */
+@media (max-width: 540px) {
+	
+	header{
+		width: 33.7em;
+	}
+	
+	.container {
+		width: 75%;
+		margin: auto;
+		overflow: hidden;
+	}
+	
+	body {
+		font-family: 'Coda', cursive;
+		font-size: 1em; /* 15px converted to em */
+		line-height: 1.5;
+		padding: 0;
+		margin: 0;
+		background-size: cover;
+		background-color: white; /* Fallback background color */
+		overflow-x: hidden; /* Hide horizontal overflow */
+		opacity: 0;
+		transition: opacity 1s;
+	}
+
+	#coverpage {
+		background: url('../assets/background2.png') no-repeat center center fixed;
+		background-size: cover;
+		opacity: 0;
+		max-width: 100%;
+		transition: opacity 1s;
+	}
+
+	#education {
+		background-color: white;
+	}
+
+	.container h1{
+		font-size: 2.125em; /* 34px converted to em */
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		color: #43485c;
+	}	
+
+	ul{
+		margin: 0;
+		padding: 0;
+	}
+
+	#showcase{
+		display: flex;
+		min-height: 40.625em; /* 650px converted to em */
+		background-repeat: no-repeat;
+		background-position: right;
+		text-align: center;
+		color: white;
+	}
+
+	#showcase .container.center-content {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		height: 100%; /* To make the container take up the full height of the section */
+	}
+
+	#showcase h1{
+		margin-top: 0.8em; /* 60px*/
+		font-size: 4em; /* 80px converted to em */
+		margin-bottom: 0.2em; /* 24px converted to em */
+		color: #f4f4f4;
+	}
+
+	#showcase p{
+		font-size: 1.25em; /* 20px converted to em */
+
+	}
+
+	#showcase .button_1 {
+		height: 3em; /* 60px converted to em */
+		width: 10em; /* 240px converted to em Set a fixed width to create a round shape */
+		font-size: 1.375em; /* 22px converted to em  Increase the font size */
+		color: white;
+		line-height: 3em; /* 60px converted to em  Vertically center text within the button */
+		border: 0.0625em solid #484848; /* Add a border with a color 1px*/
+		border-radius: 5%; /* 5px converted to em  %5 Make the button round */
+		padding: 0; /* Remove padding to make it fully round */
+		text-align: center;
+		display: block;
+		cursor: pointer;
+		background-color: #35424a;
+		margin: 1.5em auto; /* 20px converted to em */ /* Center the button horizontally and add margin for spacing */
+		text-decoration: none; /* Remove underline from text */
+		transition: background-color 0.5s, color 0.5s; /* Add a transition for background color and text color */
+	}
+
+	#showcase .button_1:hover {
+		background-color: #E0E0E0; /* Change background color on hover */
+		color: #35424a; /* Change text color on hover */
+		text-decoration: none; /* Remove underline from text */
+	}
+
+	#newsletter{
+		padding: 0.625em; /* 10px converted to em */
+		color: black;
+		background-color: white;
+		align-items: center;
+
+	}
+
+	#newsletter h1{
+		text-align: center;
+		align-items: center;
+	}
+
+	#boxes {
+		margin-top: 1.25em; /* 20px converted to em */
+		align-items: center;
+		text-align: center;
+		padding: 0;
+		margin: 1.25em;
+		background-color: #fff;
+		border: 0.0625em solid #ddd; /* 1px converted to em */
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		text-align: center;
+	}
+
+	#boxes-no-border{
+		margin-top: 1.25em; /* 20px converted to em */
+		align-items: center;
+		text-align: center;
+		padding: 0px;
+		margin: 1.25em;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		text-align: center;
+	}
+
+	#boxes-no-border .container h1{
+		margin-top: 1.25em; /* 20px converted to em */
+
+	}
+
+	#boxes-no-border .box {
+		float: none;
+		width: 93%;
+		padding: 1.5625em; /* 25px converted to em */
+		text-align: center;
+		align-items: center;
+	}
+
+	#boxes-no-border .box p {
+		align-items: center;
+		text-align: center;
+		padding: 1.25em; /* 20px converted to em */
+		text-indent: 1.875em; /* 30px converted to em */
+	}
+
+	#boxes-no-border .box img{
+		align-items: center;
+		text-align: center;
+		width: 3.75em; /* 60px converted to em */
+	}
+
+	#boxes-no-border .box2{
+		float: none;
+		width: 93%;
+		padding: 1.5625em; /* 25px converted to em */
+		text-align: center;
+		align-items: center;
+	}
+
+	#boxes-no-border .box2 p {
+		align-items: center;
+		text-align: center;
+		padding: 1.25em; /* 20px converted to em */
+		text-indent: 1.875em; /* 30px converted to em */
+	}
+
+	#boxes-no-border .box2 img{
+		align-items: center;
+		text-align: center;
+		width: 3.75em; /* 60px converted to em */
+	}
+
+	#boxes-no-border .box3 {
+		float: none;
+		width: 100%;
+		padding: 0;
+		text-align: center;
+		align-items: center;
+	}
+
+	#boxes-no-border .box3 p {
+		align-items: center;
+		text-align: left;
+		padding: 0em; /* 20px converted to em */
+		text-indent: 0 em; /* 30px converted to em */
+
+	}
+
+	#boxes-no-border .box3 img{
+		align-items: center;
+		text-align: center;
+		width: 3.75em; /* 60px converted to em */
+	}
+
+	#boxes-no-border .box3 h3 {
+		font-size: 1.em;
+
+	}
+
+	#boxes-no-border .box3 h4 {
+		font-size: 0.9em;
+
+	}
+
+	#boxes .box{
+		float: none;
+		width: 93%;
+		padding: 0;
+		text-align: center;
+		align-items: center;
+	}
+
+	#boxes .box p {
+		align-items: center;
+		text-align: center;
+		padding: 1.25em; /* 20px converted to em */
+		text-indent: 1.875em; /* 30px converted to em */
+	}
+
+	#boxes .box img{
+		align-items: center;
+		text-align: center;
+		width: 3.75em; /* 60px converted to em */
+	}
+	
+	/* Style links within sections */
+	section a {
+		color: #0077B6;
+		text-decoration: none;
+		font-weight: bold;
+		transition: color 0.3s; /* Smooth color transition */
+	}
+
+	/* Change color on hover */
+	section a:hover {
+		color: #333;
+	}
+
+	/* Remove bullet points under the Projects section */
+	section ul {
+		list-style: none; /* Remove bullet points */
+	}
+
+	.XLline {
+		width: 100%;
+		height: 0.0625em;
+		background-color: #000;
+		opacity: 50%;
+	}
+
+	#smallline {
+		width: 50%;
+		height: 0.0625em;
+		background-color: #000;
+		margin: auto;
+		opacity: 50%;
+	}
+
+	#mediumline {
+		width: 80%;
+		height: 0.0625em;
+		background-color: #000;
+		margin: auto;
+		opacity: 50%;
+	}
+
+	#largeline {
+		width: 100%;
+		height: 0.0625em;
+		background-color: #000;
+		margin: auto;
+		opacity: 50%;
+	}
+
+	.percentage-bars {
+		display: flex;
+		flex-direction: column;
+	}
+
+	.bar {
+		background-color: #ccc; /* Set a background color for the outer bar */
+		margin-bottom: 0.625em; /* Add spacing between bars */
+		border-radius: 0.625em;
+		position: relative;
+	}
+
+	.bar-title {
+		font-weight: bold;
+		text-align: left;
+		margin-bottom: 0.83em;
+		position: relative;
+		top: 0;
+		left: 0;
+		z-index: 2; /* Bring the title to the front */
+
+	}
+
+	.bar-inner {
+		height: 1.25em;
+		background-color: #ff90fc; /* Set a different color for the inner percentage bar */
+		border-radius: 0.625em;
+		position: relative;
+		top: 0;
+		width: 0;
+	}
+
+	.percent-text {
+		font-family: 'Coda', cursive;
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		transform: translate(-50%, -50%);
+		color: #fff; /* Text color */
+		z-index: 0; /* Bring the percentage text to the front */
+
+	}
+
+	/* CSS for the dropdown menu */
+	.dropdown {
+		float: right;
+		margin-top: 0.625em;
+	}
+
+	.menu-icon {
+		font-size: 1.5em;
+		cursor: pointer;
+		color: white; /* Set the color of the menu icon */
+	}
+
+	.dropdown-content {
+		display: none;
+		position: absolute;
+		top: 2em;
+		right: 1em;
+		background-color: #35424a;
+		min-width: 10em;
+		z-index: 1;
+		border: 0.0625em solid grey;
+	}
+
+	.dropdown-content span {
+		display: block;
+		color: white;
+		padding: 1em;
+		text-decoration: none;
+		text-align: center;
+	}
+
+	/* Show the dropdown menu when it's open */
+	.open {
+		display: block;
+	}
+
+	#non-cover {
+		margin-top: auto;
+		position: bottom;
+		bottom: 0;
+		width: 92.5%;
+		padding: 1.25em; /* 20px converted to em */
+		background-color: #35424a;
+		color: white;
+		text-align: center;
+		border-top: 0.1875em solid grey; /* 3px converted to em */
+
+	}
+
+	#cover {
+		position: relative;
+		bottom: 0;
+		width: 92.5%;
+		padding: 1.25em; /* 20px converted to em */
+		background-color: #35424a;
+		color: white;
+		text-align: center;
+		border-top: 0.1875em solid grey; /* 3px converted to em */
+	}
+
+	footer p{
+		color: white;
+		text-align: center;
+		font-size: 0.8em;
+		margin-top: 1.25em;
+	}
+
+
+	footer {
+		bottom: 0;
+		margin-top: auto;
+		width: 92.5%;
+		padding: 1.25em; /* 20px converted to em */
+		background-color: #35424a;
+		color: white;
+		text-align: center;
+		border-top: 0.1875em solid grey; /* 3px converted to em */
+	}
+	
+    /* Adjust other styles as needed for small screens */
+	
+}
+
+/* A media query for even smaller screens (e.g., narrow mobile devices) */
+@media (max-width: 480px) {
+	body {
+		font-family: 'Coda', cursive;
+		font-size: 1em; /* 15px converted to em */
+		line-height: 1.5;
+		padding: 0;
+		margin: 0;
+		background-size: cover;
+		background-color: white; /* Fallback background color */
+		overflow-x: hidden; /* Hide horizontal overflow */
+		opacity: 0;
+		transition: opacity 1s;
+	}
+
+	#coverpage {
+		background: url('../assets/background2.png') no-repeat center center fixed;
+		background-size: cover;
+		opacity: 0;
+		max-width: 100%;
+		transition: opacity 1s;
+	}
+
+	#education {
+		background-color: white;
+	}
+
+	.container {
+		width: 85%;
+		margin: auto;
+		overflow: hidden;
+	}
+
+	.container h1{
+		font-size: 2.125em; /* 34px converted to em */
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		color: #43485c;
+	}	
+
+	ul{
+		margin: 0;
+		padding: 0;
+	}
+
+	header{
+		width: 100%;
+	}
+
+	#showcase{
+		display: flex;
+		min-height: 45.7em; /* 650px converted to em */
+		background-repeat: no-repeat;
+		background-position: right;
+		text-align: center;
+		color: white;
+	}
+
+	#showcase .container.center-content {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		height: 100%; /* To make the container take up the full height of the section */
+	}
+
+	#showcase h1{
+		margin-top: 0.8em; /* 60px*/
+		font-size: 4em; /* 80px converted to em */
+		margin-bottom: 0.2em; /* 24px converted to em */
+		color: #f4f4f4;
+	}
+
+	#showcase p{
+		font-size: 1.25em; /* 20px converted to em */
+
+	}
+
+	#showcase .button_1 {
+		height: 3em; /* 60px converted to em */
+		width: 10em; /* 240px converted to em Set a fixed width to create a round shape */
+		font-size: 1.375em; /* 22px converted to em  Increase the font size */
+		color: white;
+		line-height: 3em; /* 60px converted to em  Vertically center text within the button */
+		border: 0.0625em solid #484848; /* Add a border with a color 1px*/
+		border-radius: 5%; /* 5px converted to em  %5 Make the button round */
+		padding: 0; /* Remove padding to make it fully round */
+		text-align: center;
+		display: block;
+		cursor: pointer;
+		background-color: #35424a;
+		margin: 1.5em auto; /* 20px converted to em */ /* Center the button horizontally and add margin for spacing */
+		text-decoration: none; /* Remove underline from text */
+		transition: background-color 0.5s, color 0.5s; /* Add a transition for background color and text color */
+	}
+
+	#showcase .button_1:hover {
+		background-color: #E0E0E0; /* Change background color on hover */
+		color: #35424a; /* Change text color on hover */
+		text-decoration: none; /* Remove underline from text */
+	}
+
+	#newsletter{
+		padding: 0.625em; /* 10px converted to em */
+		color: black;
+		background-color: white;
+		align-items: center;
+
+	}
+
+	#newsletter h1{
+		text-align: center;
+		align-items: center;
+	}
+
+	#boxes {
+		margin-top: 1.25em; /* 20px converted to em */
+		align-items: center;
+		text-align: center;
+		padding: 0;
+		margin: 1.25em;
+		background-color: #fff;
+		border: 0.0625em solid #ddd; /* 1px converted to em */
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		text-align: center;
+	}
+
+	#boxes-no-border{
+		margin-top: 1.25em; /* 20px converted to em */
+		align-items: center;
+		text-align: center;
+		padding: 0px;
+		margin: 1.25em;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		text-align: center;
+	}
+
+	#boxes-no-border .container h1{
+		margin-top: 1.25em; /* 20px converted to em */
+
+	}
+
+	#boxes-no-border .box{
+		float: none;
+		width: 80%;
+		padding: 1.5625em; /* 25px converted to em */
+		text-align: center;
+		align-items: center;
+	}
+
+	#boxes-no-border .box p {
+		align-items: center;
+		text-align: center;
+		padding: 1.25em; /* 20px converted to em */
+		text-indent: 1.875em; /* 30px converted to em */
+	}
+
+	#boxes-no-border .box img{
+		align-items: center;
+		text-align: center;
+		width: 3.75em; /* 60px converted to em */
+	}
+
+	#boxes-no-border .box2{
+		float: none;
+		width: 80%;
+		padding: 1.5625em; /* 25px converted to em */
+		text-align: center;
+		align-items: center;
+	}
+
+	#boxes-no-border .box2 p {
+		align-items: center;
+		text-align: center;
+		padding: 1.25em; /* 20px converted to em */
+		text-indent: 1.875em; /* 30px converted to em */
+	}
+
+	#boxes-no-border .box2 img{
+		align-items: center;
+		text-align: center;
+		width: 3.75em; /* 60px converted to em */
+	}
+
+	#boxes-no-border .box3{
+		float: none;
+		width: 100%;
+		padding: 0;
+		text-align: center;
+		align-items: center;
+	}
+
+	#boxes-no-border .box3 p {
+		align-items: center;
+		text-align: left;
+		padding: 0.2em; /* 20px converted to em */
+		text-indent: 0 em; /* 30px converted to em */
+
+	}
+
+	#boxes-no-border .box3 img{
+		align-items: center;
+		text-align: center;
+		width: 3.75em; /* 60px converted to em */
+	}
+
+	#boxes-no-border .box3 h3 {
+		font-size: 1.em;
+
+	}
+
+	#boxes-no-border .box3 h4 {
+		font-size: 0.9em;
+
+	}
+
+	#boxes .box{
+		float: none;
+		width: 80%;
+		padding: 0;
+		text-align: center;
+		align-items: center;
+	}
+
+	#boxes .box p {
+		align-items: center;
+		text-align: center;
+		padding: 1.25em; /* 20px converted to em */
+		text-indent: 1.875em; /* 30px converted to em */
+	}
+
+	#boxes .box img{
+		align-items: center;
+		text-align: center;
+		width: 3.75em; /* 60px converted to em */
+	}
+	
+	/* Style links within sections */
+	section a {
+		color: #0077B6;
+		text-decoration: none;
+		font-weight: bold;
+		transition: color 0.3s; /* Smooth color transition */
+	}
+
+	/* Change color on hover */
+	section a:hover {
+		color: #333;
+	}
+
+	/* Remove bullet points under the Projects section */
+	section ul {
+		list-style: none; /* Remove bullet points */
+	}
+
+	.XLline {
+		width: 100%;
+		height: 0.0625em;
+		background-color: #000;
+		opacity: 50%;
+	}
+
+	#smallline {
+		width: 50%;
+		height: 0.0625em;
+		background-color: #000;
+		margin: auto;
+		opacity: 50%;
+	}
+
+	#mediumline {
+		width: 80%;
+		height: 0.0625em;
+		background-color: #000;
+		margin: auto;
+		opacity: 50%;
+	}
+
+	#largeline {
+		width: 100%;
+		height: 0.0625em;
+		background-color: #000;
+		margin: auto;
+		opacity: 50%;
+	}
+
+	.percentage-bars {
+		display: flex;
+		flex-direction: column;
+	}
+
+	.bar {
+		background-color: #ccc; /* Set a background color for the outer bar */
+		margin-bottom: 0.625em; /* Add spacing between bars */
+		border-radius: 0.625em;
+		position: relative;
+	}
+
+	.bar-title {
+		font-weight: bold;
+		text-align: left;
+		margin-bottom: 0.83em;
+		position: relative;
+		top: 0;
+		left: 0;
+		z-index: 2; /* Bring the title to the front */
+
+	}
+
+	.bar-inner {
+		height: 1.25em;
+		background-color: #ff90fc; /* Set a different color for the inner percentage bar */
+		border-radius: 0.625em;
+		position: relative;
+		top: 0;
+		width: 0;
+	}
+
+	.percent-text {
+		font-family: 'Coda', cursive;
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		transform: translate(-50%, -50%);
+		color: #fff; /* Text color */
+		z-index: 0; /* Bring the percentage text to the front */
+
+	}
+
+	/* CSS for the dropdown menu */
+	.dropdown {
+		float: right;
+		margin-top: 0.625em;
+	}
+
+	.menu-icon {
+		font-size: 1.5em;
+		cursor: pointer;
+		color: white; /* Set the color of the menu icon */
+	}
+
+	.dropdown-content {
+		display: none;
+		position: absolute;
+		top: 2em;
+		right: 1em;
+		background-color: #35424a;
+		min-width: 10em;
+		z-index: 1;
+		border: 0.0625em solid grey;
+	}
+
+	.dropdown-content span {
+		display: block;
+		color: white;
+		padding: 1em;
+		text-decoration: none;
+		text-align: center;
+	}
+
+	/* Show the dropdown menu when it's open */
+	.open {
+		display: block;
+	}
+
+	#non-cover {
+		margin-top: auto;
+		position: bottom;
+		bottom: 0;
+		width: 90%;
+		padding: 1.25em; /* 20px converted to em */
+		background-color: #35424a;
+		color: white;
+		text-align: center;
+		border-top: 0.1875em solid grey; /* 3px converted to em */
+
+	}
+
+	#cover {
+		position: fixed;
+		bottom: 0;
+		width: 90%;
+		padding: 1.25em; /* 20px converted to em */
+		background-color: #35424a;
+		color: white;
+		text-align: center;
+		border-top: 0.1875em solid grey; /* 3px converted to em */
+	}
+
+	footer p{
+		color: white;
+		text-align: center;
+		font-size: 0.8em;
+		margin-top: 1.25em;
+	}
+
+
+	footer {
+		bottom: 0;
+		margin-top: auto;
+		width: 90%;
+		padding: 1.25em; /* 20px converted to em */
+		background-color: #35424a;
+		color: white;
+		text-align: center;
+		border-top: 0.1875em solid grey; /* 3px converted to em */
+	}
+	
+    /* Adjust other styles as needed for small screens */
+}
+
+/* A media query for even smaller screens (e.g., small mobile devices) */
+@media (max-width: 320px) {
+	body {
+		font-family: 'Coda', cursive;
+		font-size: 1em; /* 15px converted to em */
+		line-height: 1.5;
+		padding: 0;
+		margin: 0;
+		background-size: cover;
+		background-color: white; /* Fallback background color */
+		overflow-x: hidden; /* Hide horizontal overflow */
+		opacity: 0;
+		transition: opacity 1s;
+	}
+
+	#coverpage {
+		background: url('../assets/background2.png') no-repeat center center fixed;
+		background-size: cover;
+		opacity: 0;
+		max-width: 100%;
+		transition: opacity 1s;
+	}
+
+	#education {
+		background-color: white;
+	}
+
+	.container {
+		width: 85%;
+		margin: auto;
+		overflow: hidden;
+	}
+
+	.container h1{
+		font-size: 2.125em; /* 34px converted to em */
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		color: #43485c;
+	}	
+
+	ul{
+		margin: 0;
+		padding: 0;
+	}
+
+	header{
+		width: 100%;
+	}
+
+	#showcase{
+		display: flex;
+		min-height: 40.625em; /* 650px converted to em */
+		background-repeat: no-repeat;
+		background-position: right;
+		text-align: center;
+		color: white;
+	}
+
+	#showcase .container.center-content {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		height: 100%; /* To make the container take up the full height of the section */
+	}
+
+	#showcase h1{
+		margin-top: 0.8em; /* 60px*/
+		font-size: 3.9em; /* 80px converted to em */
+		margin-bottom: 0.2em; /* 24px converted to em */
+		color: #f4f4f4;
+	}
+
+	#showcase p{
+		font-size: 1.25em; /* 20px converted to em */
+
+	}
+
+	#showcase .button_1 {
+		height: 3em; /* 60px converted to em */
+		width: 10em; /* 240px converted to em Set a fixed width to create a round shape */
+		font-size: 1.375em; /* 22px converted to em  Increase the font size */
+		color: white;
+		line-height: 3em; /* 60px converted to em  Vertically center text within the button */
+		border: 0.0625em solid #484848; /* Add a border with a color 1px*/
+		border-radius: 5%; /* 5px converted to em  %5 Make the button round */
+		padding: 0; /* Remove padding to make it fully round */
+		text-align: center;
+		display: block;
+		cursor: pointer;
+		background-color: #35424a;
+		margin: 1.5em auto; /* 20px converted to em */ /* Center the button horizontally and add margin for spacing */
+		text-decoration: none; /* Remove underline from text */
+		transition: background-color 0.5s, color 0.5s; /* Add a transition for background color and text color */
+	}
+
+	#showcase .button_1:hover {
+		background-color: #E0E0E0; /* Change background color on hover */
+		color: #35424a; /* Change text color on hover */
+		text-decoration: none; /* Remove underline from text */
+	}
+
+	#newsletter{
+		padding: 0.625em; /* 10px converted to em */
+		color: black;
+		background-color: white;
+		align-items: center;
+
+	}
+
+	#newsletter h1{
+		text-align: center;
+		align-items: center;
+	}
+
+	#boxes {
+		margin-top: 1.25em; /* 20px converted to em */
+		align-items: center;
+		text-align: center;
+		padding: 0;
+		margin: 1.25em;
+		background-color: #fff;
+		border: 0.0625em solid #ddd; /* 1px converted to em */
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		text-align: center;
+	}
+
+	#boxes-no-border{
+		margin-top: 1.25em; /* 20px converted to em */
+		align-items: center;
+		text-align: center;
+		padding: 0px;
+		margin: 1.25em;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		text-align: center;
+	}
+
+	#boxes-no-border .container h1{
+		margin-top: 1.25em; /* 20px converted to em */
+
+	}
+
+	#boxes-no-border .box{
+		float: none;
+		width: 80%;
+		padding: 1.5625em; /* 25px converted to em */
+		text-align: center;
+		align-items: center;
+	}
+
+	#boxes-no-border .box p {
+		align-items: center;
+		text-align: center;
+		padding: 1.25em; /* 20px converted to em */
+		text-indent: 1.875em; /* 30px converted to em */
+	}
+
+	#boxes-no-border .box img{
+		align-items: center;
+		text-align: center;
+		width: 3.75em; /* 60px converted to em */
+	}
+
+	#boxes-no-border .box2{
+		float: none;
+		width: 80%;
+		padding: 1.5625em; /* 25px converted to em */
+		text-align: center;
+		align-items: center;
+	}
+
+	#boxes-no-border .box2 p {
+		align-items: center;
+		text-align: center;
+		padding: 1.25em; /* 20px converted to em */
+		text-indent: 1.875em; /* 30px converted to em */
+	}
+
+	#boxes-no-border .box2 img{
+		align-items: center;
+		text-align: center;
+		width: 3.75em; /* 60px converted to em */
+	}
+
+	#boxes-no-border .box3{
+		float: none;
+		width: 100%;
+		padding: 0;
+		text-align: center;
+		align-items: center;
+	}
+
+	#boxes-no-border .box3 p {
+		align-items: center;
+		text-align: left;
+		font-size: 1.1em;
+		padding: 0em; /* 20px converted to em */
+		text-indent: 0 em; /* 30px converted to em */
+
+	}
+
+	#boxes-no-border .box3 img{
+		align-items: center;
+		text-align: center;
+		width: 3.75em; /* 60px converted to em */
+	}
+
+	#boxes-no-border .box3 h3 {
+		font-size: 1.em;
+
+	}
+
+	#boxes-no-border .box3 h4 {
+		font-size: 0.9em;
+
+	}
+
+	#boxes .box{
+		float: none;
+		width: 80%;
+		padding: 0;
+		text-align: center;
+		align-items: center;
+	}
+
+	#boxes .box p {
+		align-items: center;
+		text-align: center;
+		padding: 1.25em; /* 20px converted to em */
+		text-indent: 1.875em; /* 30px converted to em */
+	}
+
+	#boxes .box img{
+		align-items: center;
+		text-align: center;
+		width: 3.75em; /* 60px converted to em */
+	}
+	
+	/* Style links within sections */
+	section a {
+		color: #0077B6;
+		text-decoration: none;
+		font-weight: bold;
+		transition: color 0.3s; /* Smooth color transition */
+	}
+
+	/* Change color on hover */
+	section a:hover {
+		color: #333;
+	}
+
+	/* Remove bullet points under the Projects section */
+	section ul {
+		list-style: none; /* Remove bullet points */
+	}
+
+	.XLline {
+		width: 100%;
+		height: 0.0625em;
+		background-color: #000;
+		opacity: 50%;
+	}
+
+	#smallline {
+		width: 50%;
+		height: 0.0625em;
+		background-color: #000;
+		margin: auto;
+		opacity: 50%;
+	}
+
+	#mediumline {
+		width: 80%;
+		height: 0.0625em;
+		background-color: #000;
+		margin: auto;
+		opacity: 50%;
+	}
+
+	#largeline {
+		width: 100%;
+		height: 0.0625em;
+		background-color: #000;
+		margin: auto;
+		opacity: 50%;
+	}
+
+	.percentage-bars {
+		display: flex;
+		flex-direction: column;
+	}
+
+	.bar {
+		background-color: #ccc; /* Set a background color for the outer bar */
+		margin-bottom: 0.625em; /* Add spacing between bars */
+		border-radius: 0.625em;
+		position: relative;
+	}
+
+	.bar-title {
+		font-weight: bold;
+		text-align: left;
+		margin-bottom: 0.83em;
+		position: relative;
+		top: 0;
+		left: 0;
+		z-index: 2; /* Bring the title to the front */
+
+	}
+
+	.bar-inner {
+		height: 1.25em;
+		background-color: #ff90fc; /* Set a different color for the inner percentage bar */
+		border-radius: 0.625em;
+		position: relative;
+		top: 0;
+		width: 0;
+	}
+
+	.percent-text {
+		font-family: 'Coda', cursive;
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		transform: translate(-50%, -50%);
+		color: #fff; /* Text color */
+		z-index: 0; /* Bring the percentage text to the front */
+
+	}
+
+	/* CSS for the dropdown menu */
+	.dropdown {
+		float: right;
+		margin-top: 0.625em;
+	}
+
+	.menu-icon {
+		font-size: 1.5em;
+		cursor: pointer;
+		color: white; /* Set the color of the menu icon */
+	}
+
+	.dropdown-content {
+		display: none;
+		position: absolute;
+		top: 2em;
+		right: 1em;
+		background-color: #35424a;
+		min-width: 10em;
+		z-index: 1;
+		border: 0.0625em solid grey;
+	}
+
+	.dropdown-content span {
+		display: block;
+		color: white;
+		padding: 1em;
+		text-decoration: none;
+		text-align: center;
+	}
+
+	/* Show the dropdown menu when it's open */
+	.open {
+		display: block;
+	}
+
+	#non-cover {
+		margin-top: auto;
+		position: relative;
+		bottom: 0;
+		width: 85.5%;
+		padding: 1.25em; /* 20px converted to em */
+		background-color: #35424a;
+		color: white;
+		text-align: center;
+		border-top: 0.1875em solid grey; /* 3px converted to em */
+
+	}
+
+	#cover {
+		position: relative;
+		bottom: 0;
+		width: 85.5%;
+		padding: 1.25em; /* 20px converted to em */
+		background-color: #35424a;
+		color: white;
+		text-align: center;
+		border-top: 0.1875em solid grey; /* 3px converted to em */
+	}
+
+	footer p{
+		color: white;
+		text-align: center;
+		font-size: 0.6em;
+		margin-top: 1.25em;
+	}
+
+
+	footer {
+		bottom: 0;
+		margin-top: auto;
+		width: 85.5%;
+		padding: 1.25em; /* 20px converted to em */
+		background-color: #35424a;
+		color: white;
+		text-align: center;
+		border-top: 0.1875em solid grey; /* 3px converted to em */
+	}
+	
+	/* Adjust other styles as needed for very small screens */
+}

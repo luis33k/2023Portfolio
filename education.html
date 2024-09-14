@@ -1,0 +1,80 @@
+<!DOCTYPE html> <!-- Document type declaration for HTML5 -->
+<html lang="en"> <!-- Start of the HTML document with the language set to English -->
+<head>
+    <meta charset="UTF-8"> <!-- Character encoding declaration -->
+    <meta name="viewport" content="width=device-width, initial-scale=1"> <!-- Viewport meta tag for responsive design -->
+    <link rel="stylesheet" type="text/css" href="stylesheets/mainstyles.css"> <!-- Link to an external CSS stylesheet -->
+	<script src="js/scripts.js"></script> <!-- include transition.js -->
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet"> <!-- Link to Google Fonts for the 'Roboto' font -->
+    <link href="https://fonts.googleapis.com/css?family=Coda" rel="stylesheet"> <!-- Link to Google Fonts for the 'Coda' font -->
+    <meta name="author" content="Luis Gornes"> <!-- Meta tag for the author's name -->
+    <meta name="description" content="Luis Gornes's portfolio showcasing his skills and experiences as a programmer and web developer."> <!-- Meta tag for the page description -->
+    <meta name="keywords" content="Luis Gornes, portfolio, programmer, web developer, tutor"> <!-- Meta tag for keywords related to the page content -->
+    <title>Luis Gornes Portfolio</title> <!-- Title of the webpage -->
+    <link rel="icon" href="assets/logo2.png" type="image/png"> <!-- Tab logo -->
+</head>
+<body id="education">
+	<header> <!-- Header section of the webpage -->
+		<div class="container"> <!-- Container div for header content -->
+			<span onclick="transitionToPage('index.html')">
+				<div id="logoArea">
+					<img src="assets/logosmall-purple.png" alt="LUIS G" width="60" height="60"><!--<h1>LUIS G</h1>-->
+				</div>
+			</span> <!-- Logo area with the title 'LUIS G' -->
+			<nav> <!-- Navigation menu -->
+				<div class="dropdown">
+					<div class="menu-icon" onclick="toggleDropdown()">&#9776;</div>
+					<div class="dropdown-content" id="myDropdown">
+						<span onclick="transitionToPage('index.html')">Home</span>
+						<span onclick="transitionToPage('education.html')">Education</span>
+						<span onclick="transitionToPage('experience.html')">Experience</span>
+						<span onclick="transitionToPage('skills.html')">Skills</span>
+						<span onclick="transitionToPage('contact.html')">Contact</span>
+					</div>
+				</div>
+			</nav>
+		</div>
+	</header>
+	<section id="boxes-no-border">
+		<div class="container">
+		<h1>Education</h1>
+		<div class="XLline"></div>
+			<div class="box3">
+				<img src="assets/arrow2colored.png" alt="point" height="40">
+				<h2>2023 - 2025</h2>
+				<h3>Broward College - Bachelor of Applied Science (BAS) Degree</h3>
+				<h4>Coconut Creek, Florida USA</h4>
+				<div id="smallline"></div>
+				<P>In the spring of 2023, I got accepted into a Bachelor's Degree program with the goal of graduating in 2025 with a Bachelor of Science degree in Information Technology - Web Development. My time at Broward College has been more than just school; it's been an exciting journey. Besides my studies, I've been working as a tutor at Broward College. I help other students and also get involved in group IT projects and events. 
+				I teach students how to improve their programming and computer skills, and I really enjoy being an expert-level tutor. I'm ready for the challenges and opportunities in my future. I can't wait to proudly hold my Information Technology - Web Development Bachelor's degree.
+				</P>
+			</div>
+			<div class="box3">
+				<img src="assets/arrow2colored.png" alt="point" height="40">
+				<h2>2018 - 2022</h2>
+				<h3>Broward College - Associate of Arts (A.A.) Degree</h3>
+				<h4>Coconut Creek, Florida USA</h4>
+				<div id="smallline"></div>
+				<P>In 2018, starting out in college at Broward College - North Campus gave me great energy for the furutre with bright comments from my professors on my level of knowledge. Aiming for a Computer Science degree. 
+				I loved coding in C++, HTML, CSS, Java, and Python. My heart resonated with the languages of code. The fervor for programming courses grew, fuelling my pursuit of a bright future. I was passionate about programming and wanted a bright future in the field. At first, I planned to transfer to a state university after getting my Associate's Degree in Computer Science. 
+				In 2020, I got a job at Broward College as a tutor. I switched my major to Information Technology Web Development. In 2023, I graduated with an A.A. now waiting with great passion to get my Bachelor of Applied Science degree in 2025.
+				</P> 
+			</div>
+			<div class="box3">
+				<img src="assets/arrow2colored.png" alt="point" height="40">
+				<h2>2014 - 2017</h2>
+				<h3>Cooper City Highschool Diploma</h3>
+				<h4>Davie, Florida USA</h4>
+				<div id="smallline"></div>
+				<P>In June 2017, I graduated from Cooper City High School with a GPA of 3.8. During my high school years, I focused on academic excellence and also discovered a strong interest in computer programming. 
+				In my senior year, I took courses in C++ and Arduino, which ignited my passion for coding. In my junior year, I further honed my skills through a VB.NET programming class. Now, as a recent high school graduate, I'm ready to begin my professional journey, equipped with a solid foundation in programming. 
+				With curiosity about what lies ahead I look forward to applying my skills to real-world projects, eager to continue and contribute to the ever-evolving field of technology.
+				</P> 
+			</div><br>
+		</div>
+	</section>
+	<footer id="non-cover"> <!-- Footer section of the webpage -->
+		<p>Copyright &copy; 2023 Luis Gornes. All rights reserved.</p> <!-- Copyright notice with the copyright symbol and author's name -->
+	</footer>
+</body>
+</html>

@@ -1,0 +1,97 @@
+
+#timeline {
+    /* This styles a container element with the id 'timeline' */
+    display: flex; /* Use flex layout for its children */
+    flex-direction: column; /* Arrange children in a column */
+	justify-content: space-between;
+    align-items: center; /* Center children horizontally */
+    text-align: center; /* Center text within the container */
+}
+
+.event {
+    /* This styles elements with the class 'event' (individual events on the timeline) */
+    position: relative; /* Establish a positioning context for child elements */
+    margin: 10px 0; /* Add vertical margin to separate events */
+	text-align: center;
+	padding: 20px;
+}
+
+.year {
+    /* This styles elements with the class 'year' (the year markers on the timeline) */
+    background: #0077B6; /* Background color */
+    color: white; /* Text color */
+    width: 40px; /* Width of the marker */
+    height: 40px; /* Height of the marker */
+	font-size: 18px;
+    border-radius: 50%; /* Make it a circle using border-radius */
+    line-height: 40px; /* Center text vertically within the circle */
+    position: relative; /* Position this element absolutely */
+	margin: 0 auto; /* Center the year horizontally within the event */
+    top: 20px; /* Stick it to the top of its parent */
+	text-align: center; /* Center the year text */
+
+   /* left: 50%; */ /* Center it horizontally */
+  /*  transform: translateX(-50%); */ /* Center it perfectly */
+}
+
+.event-description {
+    /* This styles elements with the class 'event-description' (description of each event) */
+    background: #E0E0E0; /* Background color */
+    border: 2px solid #0077B6; /* Border with color */
+    border-radius: 5px; /* Rounded corners */
+    padding: 10px; /* Padding inside the description box */
+    text-align: left; /* Left-align text within the box */
+	margin-top: 20px; /* Add margin to separate the year and event description */
+
+}
+
+.event h3 {
+    /* This styles 'h3' elements inside elements with the class 'event' */
+    font-size: 18px; /* Font size */
+    margin: 0; /* Remove margin to position it properly */
+    color: #333; /* Text color */
+}
+
+.event p {
+    /* This styles 'p' elements inside elements with the class 'event' */
+    font-size: 14px; /* Font size */
+    margin: 0; /* Remove margin to position it properly */
+}
+
+/* Connecting lines */
+.event:not(:last-child)::before {
+    /* This styles a pseudo-element before all but the last '.event' element */
+    content: ''; /* Add an empty content to create a line */
+    width: 2px; /* Line width */
+    height: 100%; /* Extend it to the full height of the container */
+    background: #0077B6; /* Line color */
+    position: absolute; /* Position it absolutely */
+    top: 150px; /* Position it below the year marker */
+    left: 50%; /* Center it horizontally */
+    transform: translateX(-50%); /* Center it perfectly */
+}
+
+	<section id="timeline">
+		<h2>Timeline</h2>
+		<div class="event">
+			<div class="year">2017</div>
+			<div class="event-description">
+				<h3>Starting Point</h3>
+				<p>Joined the world of web development and programming.</p>
+			</div>
+		</div>
+		<div class="event">
+			<div class="year">2020</div>
+			<div class="event-description">
+				<h3>Milestone Achieved</h3>
+				<p>Completed a significant project and gained valuable experience.</p>
+			</div>
+		</div>
+		<div class="event">
+			<div class="year">2025</div>
+			<div class="event-description">
+				<h3>Future Goals</h3>
+				<p>Looking forward to new challenges and continued growth.</p>
+			</div>
+		</div>
+	</section>

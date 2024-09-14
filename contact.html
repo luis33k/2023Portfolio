@@ -1,0 +1,69 @@
+<!DOCTYPE html> <!-- Document type declaration for HTML5 -->
+<html lang="en"> <!-- Start of the HTML document with the language set to English -->
+<head>
+    <meta charset="UTF-8"> <!-- Character encoding declaration -->
+    <meta name="viewport" content="width=device-width, initial-scale=1"> <!-- Viewport meta tag for responsive design -->
+    <link rel="stylesheet" type="text/css" href="stylesheets/mainstyles.css"> <!-- Link to an external CSS stylesheet -->
+	<script src="js/scripts.js"></script> <!-- include transition.js -->
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet"> <!-- Link to Google Fonts for the 'Roboto' font -->
+    <link href="https://fonts.googleapis.com/css?family=Coda" rel="stylesheet"> <!-- Link to Google Fonts for the 'Coda' font -->
+    <meta name="author" content="Luis Gornes"> <!-- Meta tag for the author's name -->
+    <meta name="description" content="Luis Gornes's portfolio showcasing his skills and experiences as a programmer and web developer."> <!-- Meta tag for the page description -->
+    <meta name="keywords" content="Luis Gornes, portfolio, programmer, web developer, tutor"> <!-- Meta tag for keywords related to the page content -->
+    <title>Luis Gornes Portfolio</title> <!-- Title of the webpage -->
+    <link rel="icon" href="assets/logo2.png" type="image/png"> <!-- Tab logo -->
+</head>
+<body id="skills">
+	<header> <!-- Header section of the webpage -->
+		<div class="container"> <!-- Container div for header content -->
+			<span onclick="transitionToPage('index.html')">
+				<div id="logoArea">
+					<img src="assets/logosmall-purple.png" alt="LUIS G" width="60" height="60"><!--<h1>LUIS G</h1>-->
+				</div>
+			</span> <!-- Logo area with the title 'LUIS G' -->
+			<nav> <!-- Navigation menu -->
+				<div class="dropdown">
+					<div class="menu-icon" onclick="toggleDropdown()">&#9776;</div>
+					<div class="dropdown-content" id="myDropdown">
+						<span onclick="transitionToPage('index.html')">Home</span>
+						<span onclick="transitionToPage('education.html')">Education</span>
+						<span onclick="transitionToPage('experience.html')">Experience</span>
+						<span onclick="transitionToPage('skills.html')">Skills</span>
+						<span onclick="transitionToPage('contact.hmtl')">Contact</span>
+					</div>
+				</div>
+			</nav>
+		</div>
+	</header>
+	<section id="boxes-no-border">
+		<div class="container2">
+		<h1>Contact Me</h1>
+		<div id="largeline"></div>
+		<div class="box6">
+
+			<h2>Luis F. Gornes</h2>
+			<p>Multi-Language Software & Web Developer, and Tutor</p>
+			<h3>Phone</h3>
+			<p>(954)-326-0650</p>
+			<h3>Work E-mail</h3>
+			<p>lgornes@broward.edu</p><br>
+			<div id="largeline"></div><br>
+			
+			<form id="email-form">
+				<label for="subject">Subject</label><br>
+				<input type="text" id="subject" name="subject"><br><br>
+
+				<label for="body">Body</label><br>
+				<textarea id="body" name="body" rows="8" ></textarea><br>
+				
+				<a class="email-button" onclick="sendEmail()">Email Me</a>
+				<br>
+			</form>			
+		</div>
+	</section>
+
+	<footer id="non-cover"> <!-- Footer section of the webpage -->
+		<p>Copyright &copy; 2023 Luis Gornes. All rights reserved.</p> <!-- Copyright notice with the copyright symbol and author's name -->
+	</footer>
+</body>
+</html>
